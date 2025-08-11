@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Novedades</title>
+</head>
+
+<body bgcolor="#ccffcc" style="margin-left: 20%; margin-right: 20%; font-family: 'Book Antiqua';">
+
+	<p align="center">
+		<font face="Impact" size="6" color="#245011">
+			.......Novedades 🚨
+		</font>
+	</p>
+
+	<!-- Imagen principal (más grande) -->
+	<center>
+		<img src="file:///D|/Aldo Andrade/images/Novedades.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+	</center>
+
+	<p align="justify" style="font-size: 20px;">
+		Echa un vistazo a las novedades.
+	</p>
+
+	<!-- Segunda imagen (también más grande) -->
+	<center>
+		<img src="file:///D|/Aldo Andrade/images/novedades1.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+                <img src="file:///D|/Aldo Andrade/images/novedades2.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+                <img src="file:///D|/Aldo Andrade/images/novedades3.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+                <img src="file:///D|/Aldo Andrade/images/novedades4.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+
+
+	</center>
+
+	<!-- Botón volver -->
+	<p align="center" style="margin-top: 40px;">
+		<a href="file:///D|/Aldo Andrade/index.html">
+			<img src="file:///D|/Aldo Andrade/images/volver.png" style="width: 100px; height: auto;">
+		</a>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Encuesta de Satisfacción - VIRTUAL TECHNOLOGIES</title> 
+  <style> 
+    body { 
+      font-family: sans-serif; 
+      background-color: #e0f2d3; /* Verde suave */ 
+    } 
+    .container { 
+      width: 80%; 
+      margin: 0 auto; 
+      padding: 20px; 
+    } 
+    label { 
+      display: block; 
+      margin-bottom: 5px; 
+    } 
+    input[type="text"], 
+    input[type="email"], 
+    textarea { 
+      width: 100%; 
+      padding: 8px; 
+      margin-bottom: 10px; 
+      box-sizing: border-box; 
+    } 
+    input[type="submit"], 
+    input[type="reset"] { 
+      padding: 10px 20px; 
+      background-color: #4CAF50; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+    } 
+    input[type="submit"]:hover, 
+    input[type="reset"]:hover { 
+      background-color: #45a049; 
+    } 
+    .center { 
+      text-align: center; 
+    } 
+    img { 
+      max-width: 100%; 
+      height: auto; 
+      margin-bottom: 20px; 
+      display: block; 
+      margin-left: auto; 
+      margin-right: auto; 
+    } 
+    video { 
+      width: 100%; /* El video ocupará todo el ancho del contenedor */ 
+      max-width: 800px; /* Tamaño máximo para evitar que sea demasiado grande */ 
+      height: auto; /* Mantiene la relación de aspecto */ 
+      display: block; 
+      margin: 0 auto; /* Centra el video */ 
+      border: 2px solid #4CAF50; /* Opcional: borde para resaltar el video */ 
+      border-radius: 10px; /* Esquinas redondeadas opcional */ 
+    } 
+    table { 
+      width: 100%; 
+      text-align: center; 
+      border-collapse: collapse; 
+      margin-bottom: 20px; 
+    } 
+    table, th, td { 
+      border: 1px solid black; 
+    } 
+    th, td { 
+      padding: 10px; 
+    } 
+  </style> 
+</head> 
+<body> 
+  <div class="container"> 
+    <div class="center"> 
+      <h2>Encuesta de Satisfacción del Cliente</h2> 
+      <img src="file:///D|/Aldo Andrade/images/formulario.png" alt="Imagen de VIRTUAL TECHNOLOGIES"> 
+      Gracias por su compra en <strong>VIRTUAL TECHNOLOGIES</strong>. Su opinión nos ayuda a mejorar nuestros productos y servicios tecnológicos. 
+    </div> 
+
+    <form action="file:///D|/Aldo Andrade/tu_script_de_procesamiento.php" method="post"> 
+      <label for="nombre">Nombre:</label> 
+      <input type="text" name="nombre" id="nombre" required> 
+ 
+      <label for="apellido">Apellido:</label> 
+      <input type="text" name="apellido" id="apellido" required> 
+ 
+      <label for="email">Email:</label> 
+      <input type="email" name="email" id="email" required> 
+ 
+      <label>Sexo:</label> 
+      <input type="radio" name="sexo" id="varon" value="Varón" required> 
+      <label for="varon">Varón</label> 
+      <input type="radio" name="sexo" id="mujer" value="Mujer"> 
+      <label for="mujer">Mujer</label> 
+ 
+      <label for="producto">Producto adquirido:</label> 
+      <input type="text" name="producto" id="producto" placeholder="Ej. Laptop Lenovo, Audífonos JBL" required> 
+ 
+      <label for="satisfaccion">¿Qué tan satisfecho(a) está con su compra?</label> 
+      <select name="satisfaccion" id="satisfaccion" required> 
+        <option value="Muy satisfecho">Muy satisfecho</option> 
+        <option value="Satisfecho">Satisfecho</option> 
+        <option value="Neutral">Neutral</option> 
+        <option value="Insatisfecho">Insatisfecho</option> 
+        <option value="Muy insatisfecho">Muy insatisfecho</option> 
+      </select> 
+ 
+      <label>¿Qué aspectos le gustaron más?</label> 
+      <input type="checkbox" name="aspectos[]" value="Calidad del producto"> Calidad del producto<br>  
+      <input type="checkbox" name="aspectos[]" value="Precio"> Precio<br> 
+      <input type="checkbox" name="aspectos[]" value="Atención al cliente"> Atención al cliente<br> 
+      <input type="checkbox" name="aspectos[]" value="Entrega rápida"> Entrega rápida<br> 
+      <input type="checkbox" name="aspectos[]" value="Garantía"> Garantía<br> 
+ 
+      <label for="comentarios">Comentarios o sugerencias:</label> 
+      <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Escriba aquí su opinión..."></textarea> 
+
+      <!-- Tabla de calificación -->
+      <label>¿Cómo calificaría los siguientes aspectos?</label>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspecto</th>
+            <th>Malo</th>
+            <th>Regular</th>
+            <th>Bueno</th>
+            <th>Excelente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Calidad del producto</td>
+            <td><input type="radio" name="calidad_producto" value="Malo"></td>
+            <td><input type="radio" name="calidad_producto" value="Regular"></td>
+            <td><input type="radio" name="calidad_producto" value="Bueno"></td>
+            <td><input type="radio" name="calidad_producto" value="Excelente"></td>
+          </tr>
+          <tr>
+            <td>Atención al cliente</td>
+            <td><input type="radio" name="atencion_cliente" value="Malo"></td>
+            <td><input type="radio" name="atencion_cliente" value="Regular"></td>
+            <td><input type="radio" name="atencion_cliente" value="Bueno"></td>
+            <td><input type="radio" name="atencion_cliente" value="Excelente"></td>
+          </tr>
+          <tr>
+            <td>Tiempo de entrega</td>
+            <td><input type="radio" name="tiempo_entrega" value="Malo"></td>
+            <td><input type="radio" name="tiempo_entrega" value="Regular"></td>
+            <td><input type="radio" name="tiempo_entrega" value="Bueno"></td>
+            <td><input type="radio" name="tiempo_entrega" value="Excelente"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <input type="submit" value="Enviar"> 
+      <input type="reset" value="Limpiar"> 
+    </form> 
+
+    <div class="center" style="margin-top: 20px;"> 
+      <video controls> 
+        <source src="video/proceso.mp4" type="video/mp4"> 
+        Your browser does not support the video tag. 
+      </video> 
+    </div> 
+
+    <!-- Botón Volver con imagen -->
+    <p align="center" style="margin-top: 40px;"> 
+      <a href="file:///D|/Aldo Andrade/index.html"> 
+        <img src="file:///D|/Aldo Andrade/images/volver.png" alt="Botón Volver" style="width: 100px; height: auto;"> 
+      </a> 
+    </p> 
+  </div> 
+</body> 
+</html>
+
+
+ 

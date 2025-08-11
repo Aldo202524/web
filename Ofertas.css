@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Novedades</title>
+</head>
+
+<body bgcolor="#d3d3d3" style="margin-left: 20%; margin-right: 20%; font-family: 'Book Antiqua';">
+
+	<p align="center">
+		<font face="Impact" size="6" color="#245011">
+			📢 Ofertas 🚀
+		</font>
+	</p>
+
+	<!-- Imagen principal (más grande) -->
+	<center>
+		<img src="file:///D|/Aldo Andrade/images/oferta1.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+	</center>
+
+	<p align="justify" style="font-size: 20px;">
+		!Lo más Destacados!
+	</p>
+
+	<!-- Segunda imagen (también más grande) -->
+	<center>
+		<img src="file:///D|/Aldo Andrade/images/ofertas2.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+        </center>
+        <center>
+                <img src="file:///D|/Aldo Andrade/images/ofertas3.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+        </center>
+        <center>
+                <img src="file:///D|/Aldo Andrade/images/ofertas3.jpg" style="width: 700px; height: auto; image-rendering: auto;">
+           
+	</center>
+
+	<!-- Botón volver -->
+	<p align="center" style="margin-top: 40px;">
+		<a href="file:///D|/Aldo Andrade/index.html">
+			<img src="file:///D|/Aldo Andrade/images/volver.png" style="width: 100px; height: auto;">
+		</a>
+	</p>
+
+</body>
+</html>
